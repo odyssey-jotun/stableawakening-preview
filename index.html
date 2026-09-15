@@ -39,9 +39,8 @@
   <main>
     <section class="hero">
       <div class="hero-card">
-        <img src="img/hero-night.jpg" alt="A lone figure beneath the Milky Way">
+        <img class="hero-bg" src="img/hero-night.jpg" alt="A lone figure beneath the Milky Way">
         <div class="hero-inner">
-          <span class="kicker">Psycho-Spiritual Guidance · Daniel Lev</span>
           <h1>Spirituality, <em>grounded</em> in psychology.</h1>
           <p class="lead">I help spiritually-inclined men &amp; women wake up to their true Self and build authentic lives rooted in love and peace.</p>
           <div class="btn-row">
@@ -49,6 +48,10 @@
             <a class="btn btn-glass" href="#stories">Watch client stories <span class="arr"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5l8 4.5-8 4.5z"/></svg></span></a>
           </div>
         </div>
+        <figure class="hero-portrait">
+          <img src="img/headshot.jpg" alt="Daniel Lev Shkolnik" loading="lazy">
+          <figcaption class="glass-label"><strong>Daniel Lev Shkolnik</strong><span>Spiritual guide · Certified life coach · Therapist-in-training</span></figcaption>
+        </figure>
         <div class="hero-stats">
           <div><strong>Free 30-min consult</strong><span>Honest conversation, no obligation</span></div>
           <div><strong>Online via Zoom</strong><span>Based in New Orleans, working worldwide</span></div>
@@ -58,7 +61,6 @@
     </section>
 
     <section class="logos" aria-label="Education, training and speaking">
-      <p class="logos-label">Education, training &amp; speaking</p>
       <div class="marquee">
         <div class="marquee-track">
           <div class="logo-tile"><img src="img/logo-yale.png" alt="Yale University"></div>
@@ -81,13 +83,12 @@
       <div class="wrap">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">About Daniel</span>
             <h2>A guide who’s <em>walked the path</em>.</h2>
           </div>
           <a class="text-link" href="about.html">Read my story</a>
         </div>
         <div class="bento">
-          <div class="tile photo span-5 row-2 reveal">
+          <div class="tile photo span-5 row-2 hide-mobile reveal">
             <img src="img/headshot.jpg" alt="Daniel Lev Shkolnik">
             <div class="glass-label">
               <strong>Daniel Lev Shkolnik</strong>
@@ -95,12 +96,11 @@
             </div>
           </div>
           <div class="tile span-7 reveal">
-            <span class="tile-label">Spirituality + Psychology</span>
             <p class="quote">I use modern psychology, Buddhism, and non-dual traditions to awaken clients to their core <em>(human)</em> Self as well as their highest <em>(cosmic)</em> Self.</p>
             <a class="text-link" href="work.html">How the work works</a>
           </div>
           <div class="tile span-4 reveal">
-            <span class="tile-label">Draws from</span>
+            <h3>What I draw from</h3>
             <div class="chips">
               <span class="chip">Internal Family Systems</span>
               <span class="chip">Jungian shadow work</span>
@@ -112,7 +112,6 @@
           </div>
           <a class="tile glow span-3 reveal" href="https://www.stableawakening.com/service-page/free-consult">
             <div>
-              <span class="tile-label" style="color:#e9e4f5">Start here</span>
               <div class="big-num">Free</div>
               <span class="muted" style="color:#d8d3e6">30-minute consult</span>
             </div>
@@ -125,22 +124,32 @@
     <section class="section" id="stories" style="padding-top:0">
       <div class="wrap">
         <div class="section-head reveal">
-          <div>
-            <span class="kicker">Client stories</span>
-            <h2>What people <em>are saying</em>.</h2>
-          </div>
+          <h2>What people <em>are saying</em>.</h2>
+        </div>
+        <div class="cards reviews reveal">
+          <div class="card quote-card"><p>“Working with Daniel was a breath of much needed fresh air. He helped me articulate who I am and what I have to offer the world.”</p><cite><span class="avatar">R</span>Rae K.</cite></div>
+          <div class="card quote-card"><p>“His calm and supportive guidance allowed me to be vulnerable with myself, which led me to discover my life’s mission.”</p><cite><span class="avatar">M</span>Merry-Nichole</cite></div>
+          <div class="card quote-card"><p>“Daniel will help you unravel your thoughts with a sensitivity that makes you feel seen, valued, and comfortable.”</p><cite><span class="avatar">A</span>Annelisa L.</cite></div>
+        </div>
+        <div class="video-head reveal">
+          <h3>Watch their stories</h3>
           <div class="carousel-controls">
-            <button class="icon-btn" data-scroll="-1" aria-controls="video-track" aria-label="Previous"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4L3 8l4 4"/></svg></button>
-            <button class="icon-btn" data-scroll="1" aria-controls="video-track" aria-label="Next"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
+            <div class="dots" data-for="video-track"></div>
+            <button class="icon-btn" data-scroll="-1" aria-controls="video-track" aria-label="Previous videos"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4L3 8l4 4"/></svg></button>
+            <button class="icon-btn" data-scroll="1" aria-controls="video-track" aria-label="Next videos"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button>
           </div>
         </div>
         <div class="carousel reveal" id="video-track">
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t1.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Fully raw humanness”</strong><span class="duration">2:43</span></div></a>
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t2.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Permission to be who I am.”</strong><span class="duration">2:25</span></div></a>
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t3.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Miracles happened.”</strong><span class="duration">3:24</span></div></a>
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t4.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“I’m not holding back.”</strong><span class="duration">3:16</span></div></a>
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t5.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Wow.”</strong><span class="duration">3:14</span></div></a>
-          <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t6.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“It felt like Peace.”</strong><span class="duration">3:18</span></div></a>
+          <div class="slide">
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t1.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Fully raw humanness”</strong><span class="duration">2:43</span></div></a>
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t2.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Permission to be who I am.”</strong><span class="duration">2:25</span></div></a>
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t3.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Miracles happened.”</strong><span class="duration">3:24</span></div></a>
+          </div>
+          <div class="slide">
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t4.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“I’m not holding back.”</strong><span class="duration">3:16</span></div></a>
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t5.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“Wow.”</strong><span class="duration">3:14</span></div></a>
+            <a class="video-card" href="https://www.stableawakening.com/testimonials-1"><div class="video-thumb"><img src="img/t6.jpg" alt="" loading="lazy"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span></div><div class="video-body"><strong>“It felt like Peace.”</strong><span class="duration">3:18</span></div></a>
+          </div>
         </div>
       </div>
     </section>
@@ -148,7 +157,6 @@
     <section class="section" style="padding-top:0">
       <div class="wrap shift">
         <div class="shift-intro reveal">
-          <span class="kicker">The path</span>
           <h2>Inner healing. <em>Outer results.</em></h2>
           <p class="lead">Awaken to your core Self and become the luminous, powerful, joyous being you truly are.</p>
           <div class="btn-row" style="margin-top:28px">
@@ -174,7 +182,6 @@
       <div class="wrap">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Getting started</span>
             <h2>Simple, honest, <em>no pressure</em>.</h2>
           </div>
         </div>
@@ -201,7 +208,6 @@
     <section class="wrap">
       <div class="cta reveal">
         <img src="img/milky-lake.jpg" alt="" loading="lazy">
-        <span class="kicker">Honest conversation. No obligation.</span>
         <h2>Don’t pretend to be <em>other than you are.</em></h2>
         <div class="chips">
           <span class="chip">Embrace your humanity</span>
